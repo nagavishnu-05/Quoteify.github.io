@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    top: -50px;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.tagline {
+    font-size: 28px;
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#prompt {
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 20px rgba(0, 255, 180, 0.8);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    resize: none;
+}
+
+#prompt:focus {
+    box-shadow: 0px 0px 30px rgba(0, 255, 180, 1);
+}
+
+#generate-button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(255, 117, 140, 0.6);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+#generate-button:hover {
+    background: linear-gradient(to right, #ff4d6d, #ff6b8a);
+    transform: translateY(-3px);
+}
+
+#output-box {
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 25px rgba(0, 200, 255, 0.8);
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#quote {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+#author {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
